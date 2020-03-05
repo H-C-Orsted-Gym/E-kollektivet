@@ -435,7 +435,7 @@ a.close.disabled, a.disabled.mailbox-attachment-close {
 .projects .table-avatar img {
   border-radius: 50%;
   display: inline;
-  width: 2.5rem;
+  /*width: 2.5rem;*/
 }
 
 .projects .project-state {
