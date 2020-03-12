@@ -31,16 +31,19 @@
 									</div>
                                     <div class="card-body">
                                         <form>
-                                            <div class="form-group"><label class="small mb-1" for="inputEmailAddress">Email</label><input class="form-control py-4" id="inputEmailAddress" type="email" placeholder="Enter email address" /></div>
-                                            <div class="form-group"><label class="small mb-1" for="inputPassword">Password</label><input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" /></div>
+                                            <div class="form-group">
+												<label class="small mb-1" for="loginUsername">Email</label>
+												<input class="form-control py-4" id="loginUsername" type="text" placeholder="Enter username" />
+											</div>
+                                            <div class="form-group">
+												<label class="small mb-1" for="inputPassword">Password</label>
+												<input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" />
+											</div>
                                             <div class="form-group">
                                                 <div class="custom-control custom-checkbox"><input class="custom-control-input" id="rememberPasswordCheck" type="checkbox" /><label class="custom-control-label" for="rememberPasswordCheck">Remember password</label></div>
                                             </div>
                                             <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0"><a class="small" href="password.html">Forgot Password?</a><a class="btn btn-primary" href="index.html">Login</a></div>
                                         </form>
-                                    </div>
-                                    <div class="card-footer text-center">
-                                        <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +55,7 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; E-kollektivet 2019</div>
+                            <div class="text-muted">Copyright &copy; E-kollektivet <?php print(date("Y")); ?></div>
                             <div>
 								<div class="text-muted">Version <?php print($settings->getVersion()) ?></div>
                             </div>
@@ -63,6 +66,8 @@
         </div>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="includes/js/scripts.js"></script>
+		<script src="includes/js/scripts.js"></script>
+		<!-- Login Script -->
+		<script src="includes/js/scripts/progress-login.js"></script>
     </body>
 </html>

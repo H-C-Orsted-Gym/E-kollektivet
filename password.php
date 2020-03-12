@@ -49,7 +49,7 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; E-kollektivet 2019</div>
+                            <div class="text-muted">Copyright &copy; E-kollektivet <?php print(date("Y")); ?></div>
                             <div class="text-muted">Version <?php print($settings->getVersion()) ?></div>
                         </div>
                     </div>
