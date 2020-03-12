@@ -42,11 +42,8 @@
 		public function logout() {
 			session_start();
 
-			if (isset($_SESSION['Id'])) {
-				return 401;
-			} else {
-				session_destroy();
-			}
+			session_destroy();
+			return 200;
 		}
 
 		public function registerUser($Username, $Password, $Firstname, $Lastname, $Email, $CPR_Number, $Birthday, $Gender, $Room, $Role) {

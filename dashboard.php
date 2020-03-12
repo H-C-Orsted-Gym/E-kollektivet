@@ -1,3 +1,15 @@
+<?php
+	include_once 'includes/php/classes/database.inc.php';
+	include_once 'includes/php/classes/users.inc.php';
+
+	$Users = new Users();
+	$result = $Users->checkSession();
+	if ($result == 401) {
+		header("Location: 401.php");
+		exit();
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

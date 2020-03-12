@@ -1,3 +1,19 @@
+<?php
+
+	//Include classes
+	include_once 'includes/php/classes/database.inc.php';
+	include_once 'includes/php/classes/users.inc.php';
+	include_once 'includes/php/classes/settings.inc.php';
+
+	$settings = new SystemSettings();
+
+	$Users = new Users();
+
+	$result = $Users->logout();
+
+?>
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,7 +22,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>404 Error - SB Admin</title>
+        <title>E-Kollektivet - Logout</title>
         <link href="includes/css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
     </head>
@@ -18,10 +34,10 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-6">
                                 <div class="text-center mt-4">
-                                    <h1 class="display-1">401</h1>
-                                    <p class="lead">Unauthorized</p>
-                                    <p>Access to this resource is denied.</p>
-                                    <a href="index.html"><i class="fas fa-arrow-left mr-1"></i>Return to Dashboard</a>
+                                    <h1 class="display-1">Outta Here</h1>
+                                    <p class="lead">Logout</p>
+                                    <p>You are now logged out of you account.</p>
+                                    <a href="index.php"><i class="fas fa-arrow-left mr-1"></i>Return to login screen</a>
                                 </div>
                             </div>
                         </div>
@@ -32,11 +48,9 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2019</div>
+                            <div class="text-muted">Copyright &copy; E-kollektivet <?php print(date("Y")); ?></div>
                             <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
+								<div class="text-muted">Version <?php print($settings->getVersion()) ?></div>
                             </div>
                         </div>
                     </div>
