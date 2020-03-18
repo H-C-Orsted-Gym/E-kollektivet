@@ -39,7 +39,7 @@
 											<label class="small mb-1" for="loginPassword">Password</label>
 											<input class="form-control py-4" id="loginPassword" type="password" placeholder="Enter password" />
 										</div>
-										<div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0"><a class="small" href="password.html">Forgot Password?</a><button class="btn btn-primary" id="loginSubmit">Login</button></div>
+										<div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0"><a class="small" href="forgot-password.php">Forgot Password?</a><button class="btn btn-primary" id="loginSubmit">Login</button></div>
 									</div>
 								</div>
 							</div>
