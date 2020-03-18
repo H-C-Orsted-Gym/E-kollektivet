@@ -9,6 +9,7 @@
 		public function checkAccount($Email, $Username) {
 			$sql = "SELECT * FROM `Users` WHERE `Email`='$Email' AND `Users`='$Username'";
 
+		}
 			
 
 		private function sendMail($Email, $Username, $Token) {
