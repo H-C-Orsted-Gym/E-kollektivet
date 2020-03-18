@@ -30,10 +30,19 @@
 										<h4 class="text-center font-weight-light">Password Recovery</h4>
 									</div>
                                     <div class="card-body">
-                                        <div class="small mb-3 text-muted">Enter your email address and we will send you a link to reset your password.</div>
+                                        <div class="small mb-3 text-muted text-center">Fill out the form and we will send you a link to reset your password.</div>
                                         <form>
-                                            <div class="form-group"><label class="small mb-1" for="inputEmailAddress">Email</label><input class="form-control py-4" id="inputEmailAddress" type="email" aria-describedby="emailHelp" placeholder="Enter email address" /></div>
-                                            <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0"><a class="small" href="login.html">Return to login</a><a class="btn btn-primary" href="login.html">Reset Password</a></div>
+                                            <div class="form-group">
+												<label class="small mb-1" for="resetEmail">Email</label>
+												<input class="form-control py-4" id="resetEmail" type="email" placeholder="Enter email address" />
+											</div>
+                                            <div class="form-group">
+												<label class="small mb-1" for="resetUsername">Username</label>
+												<input class="form-control py-4" id="resetUsername" type="text" placeholder="Enter username" />
+											</div>
+                                            <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+												<a class="small" href="index.php">Return to login</a><a class="btn btn-primary" href="login.html">Reset Password</a>
+											</div>
                                         </form>
                                     </div>
                                     <div class="card-footer text-center">
