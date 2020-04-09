@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-	<title>E-Kollektivet - Forgot Password</title>
+	<title>E-Kollektivet - Reset Password</title>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -13,7 +13,8 @@
 	<script src="https://kit.fontawesome.com/614436aae0.js" crossorigin="anonymous"></script>
 
 	<!-- Template CSS -->
-	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="./includes/css/style.css">
+</head>
 
 <body>
 	<div id="app">
@@ -27,11 +28,11 @@
 
 						<div class="card card-primary">
 							<div class="card-header">
-								<h4>Forgot Password</h4>
+								<h4>Reset Password</h4>
 							</div>
 
 							<div class="card-body">
-								<p class="text-muted">We will send a link to reset your password.</p>
+								<p class="text-muted">Please enter your new email and a new password to reset your password.</p>
 								<form method="POST">
 									<div class="form-group">
 										<label for="email">Email</label>
@@ -39,15 +40,29 @@
 									</div>
 
 									<div class="form-group">
+										<label for="password">New Password</label>
+										<input id="password" type="password" class="form-control pwstrength" data-indicator="pwindicator" name="password" tabindex="2" required>
+										<div id="pwindicator" class="pwindicator">
+											<div class="bar"></div>
+											<div class="label"></div>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="password-confirm">Confirm Password</label>
+										<input id="password-confirm" type="password" class="form-control" name="confirm-password" tabindex="2" required>
+									</div>
+
+									<div class="form-group">
 										<button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4">
-											Forgot Password
+											Reset Password
 										</button>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="simple-footer">
-							Copyright &copy; E-Kollektivet <?php print(date("Y")); ?>
+						Copyright &copy; E-Kollektivet <?php print(date("Y")); ?>
 						</div>
 					</div>
 				</div>

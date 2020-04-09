@@ -15,13 +15,13 @@ $(document).ready(function () {
 					if (data == "500") {
 						$("#loginFeedback").fadeIn(1000, function () {
 							$("#loginFeedback").html(
-								'<div class="alert alert-danger text-center"><strong><i class="fas fa-exclamation"></i> Error</strong><br> Unknown error. Contact support for help.</div>'
+								'<div class="alert alert-danger"><div class="alert-title">Error</div>Unknown Error. Contact support.</div>'
 							);
 						});
 					} else if (data == "401") {
 						$("#loginFeedback").fadeIn(1000, function () {
 							$("#loginFeedback").html(
-								'<div class="alert alert-danger text-center"><strong><i class="fas fa-exclamation"></i> Error</strong><br> Wrong Details.</div>'
+								'<div class="alert alert-warning"><div class="alert-title">Warning</div>Wrong Details.</div>'
 							);
 						});
 					} else if (data == "200") {
@@ -30,7 +30,7 @@ $(document).ready(function () {
 							$("#loginUsername").hide();
 							$("#loginPassword").val("");
 							$("#loginFeedback").html(
-								'<div class="alert alert-success text-center"><strong><i class="fas fa-trophy"></i> You are now logged in! Click <a href="dashboard.php">HERE</a> if not redirected.</div>'
+								'<div class="alert alert-success"><div class="alert-title">Success</div>You are now logged in.</div>'
 							);
 						});
 					} else {
